@@ -1,25 +1,25 @@
 $date
-	Sat May 18 13:49:57 2024
+	Sat May 18 16:26:22 2024
 $end
 $version
 	Icarus Verilog
 $end
 $timescale
-	1ns
+	1s
 $end
-$scope module parallellexample_tb $end
-$var wire 9 ! i4 [8:0] $end
-$var wire 9 " i3 [8:0] $end
-$var wire 9 # i2 [8:0] $end
-$var wire 9 $ i1 [8:0] $end
-$var wire 9 % h4 [8:0] $end
-$var wire 9 & h3 [8:0] $end
-$var wire 9 ' h2 [8:0] $end
-$var wire 9 ( h1 [8:0] $end
-$var wire 9 ) g4 [8:0] $end
-$var wire 9 * g3 [8:0] $end
-$var wire 9 + g2 [8:0] $end
-$var wire 9 , g1 [8:0] $end
+$scope module parallelisering_tb $end
+$var wire 8 ! i4 [7:0] $end
+$var wire 8 " i3 [7:0] $end
+$var wire 8 # i2 [7:0] $end
+$var wire 8 $ i1 [7:0] $end
+$var wire 8 % h4 [7:0] $end
+$var wire 8 & h3 [7:0] $end
+$var wire 8 ' h2 [7:0] $end
+$var wire 8 ( h1 [7:0] $end
+$var wire 8 ) g4 [7:0] $end
+$var wire 8 * g3 [7:0] $end
+$var wire 8 + g2 [7:0] $end
+$var wire 8 , g1 [7:0] $end
 $var reg 8 - a1 [7:0] $end
 $var reg 8 . a2 [7:0] $end
 $var reg 8 / a3 [7:0] $end
@@ -69,18 +69,18 @@ $var wire 8 Y f1 [7:0] $end
 $var wire 8 Z f2 [7:0] $end
 $var wire 8 [ f3 [7:0] $end
 $var wire 8 \ f4 [7:0] $end
-$var wire 9 ] i4 [8:0] $end
-$var wire 9 ^ i3 [8:0] $end
-$var wire 9 _ i2 [8:0] $end
-$var wire 9 ` i1 [8:0] $end
-$var wire 9 a h4 [8:0] $end
-$var wire 9 b h3 [8:0] $end
-$var wire 9 c h2 [8:0] $end
-$var wire 9 d h1 [8:0] $end
-$var wire 9 e g4 [8:0] $end
-$var wire 9 f g3 [8:0] $end
-$var wire 9 g g2 [8:0] $end
-$var wire 9 h g1 [8:0] $end
+$var wire 8 ] i4 [7:0] $end
+$var wire 8 ^ i3 [7:0] $end
+$var wire 8 _ i2 [7:0] $end
+$var wire 8 ` i1 [7:0] $end
+$var wire 8 a h4 [7:0] $end
+$var wire 8 b h3 [7:0] $end
+$var wire 8 c h2 [7:0] $end
+$var wire 8 d h1 [7:0] $end
+$var wire 8 e g4 [7:0] $end
+$var wire 8 f g3 [7:0] $end
+$var wire 8 g g2 [7:0] $end
+$var wire 8 h g1 [7:0] $end
 $scope module uut $end
 $var wire 8 i a1 [7:0] $end
 $var wire 8 j a2 [7:0] $end
@@ -90,10 +90,10 @@ $var wire 8 m b1 [7:0] $end
 $var wire 8 n b2 [7:0] $end
 $var wire 8 o b3 [7:0] $end
 $var wire 8 p b4 [7:0] $end
-$var wire 9 q c4 [8:0] $end
-$var wire 9 r c3 [8:0] $end
-$var wire 9 s c2 [8:0] $end
-$var wire 9 t c1 [8:0] $end
+$var wire 8 q c4 [7:0] $end
+$var wire 8 r c3 [7:0] $end
+$var wire 8 s c2 [7:0] $end
+$var wire 8 t c1 [7:0] $end
 $upscope $end
 $scope module uut1 $end
 $var wire 8 u a1 [7:0] $end
@@ -104,10 +104,10 @@ $var wire 8 y b1 [7:0] $end
 $var wire 8 z b2 [7:0] $end
 $var wire 8 { b3 [7:0] $end
 $var wire 8 | b4 [7:0] $end
-$var wire 9 } c4 [8:0] $end
-$var wire 9 ~ c3 [8:0] $end
-$var wire 9 !" c2 [8:0] $end
-$var wire 9 "" c1 [8:0] $end
+$var wire 8 } c4 [7:0] $end
+$var wire 8 ~ c3 [7:0] $end
+$var wire 8 !" c2 [7:0] $end
+$var wire 8 "" c1 [7:0] $end
 $upscope $end
 $scope module uut2 $end
 $var wire 8 #" a1 [7:0] $end
@@ -118,10 +118,10 @@ $var wire 8 '" b1 [7:0] $end
 $var wire 8 (" b2 [7:0] $end
 $var wire 8 )" b3 [7:0] $end
 $var wire 8 *" b4 [7:0] $end
-$var wire 9 +" c4 [8:0] $end
-$var wire 9 ," c3 [8:0] $end
-$var wire 9 -" c2 [8:0] $end
-$var wire 9 ." c1 [8:0] $end
+$var wire 8 +" c4 [7:0] $end
+$var wire 8 ," c3 [7:0] $end
+$var wire 8 -" c2 [7:0] $end
+$var wire 8 ." c1 [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -240,7 +240,7 @@ bx #
 bx "
 bx !
 $end
-#200
+#100
 b111000 !
 b111000 ]
 b111000 +"
@@ -349,7 +349,7 @@ b100 j
 b10 -
 b10 E
 b10 i
-#400
+#200
 b111 D
 b111 \
 b111 *"
@@ -455,4 +455,4 @@ b110 t
 b11 -
 b11 E
 b11 i
-#600
+#300
