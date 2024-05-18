@@ -2,9 +2,9 @@
 Dette repoet er et resultat av den frivillige oppgaven i faget nettverksprogrammering ved NTNU, IDATT2104. Oppgaven gikk ut på å lage en videoforelsninger om de integrerte kretsene FPGA og ASIC. I dette repoet ligger det kodeeksmpler som er beskrevet om i videoforelesningene. 
 
 Eksemplene inkluderer blant: 
-* En "half-adder"
-* Kryss produkt med vektorer
-* Skalarprodukt
+* En "half-adder".
+* Kryss produkt med vektorer.
+* Skalarprodukt.
 * En implementasjon av desimalltal.
 
 Kodeeksemplene er skrevet ved bruk av HDL-språket Verilog og simulert ved bruk av Icarus Verilog.
