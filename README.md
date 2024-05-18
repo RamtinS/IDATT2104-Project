@@ -79,4 +79,4 @@ iverilog -o half_adder_tb.vvp .\half_adder_tb.v
 
 
 ## Spesiell takk
-Takk til faglærerne for å ha laget denne oppgaven.
+Vil gjerne gi en spesiell takk til lærer for en fin kreativ oppgave :).
