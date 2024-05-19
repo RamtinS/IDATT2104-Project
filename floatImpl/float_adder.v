@@ -1,23 +1,20 @@
 module float_adder(
-    // Signed er en datatype som indikerer at tall skal tolkes som et heltall, både postive eller negative. 
-    // signed [7:0] er et 8 bits heltall.
-    // Det er satt av 8 bits før punktum og 4 bits etter. 
-    input signed [7:0] float_a_integer,     // Heltallsdelen for tall A. 
-    input signed [22:0] float_a_decimal,            // Desimaldelen for tall A
-    input signed [7:0] float_b_integer,     // Heltallsdelen for tall B
-    input signed [22:0] float_b_decimal,            // Desimaldelen for tall B
-    output reg signed [7:0] result_integer,  // Heltallsdelen for resultatet
-    output reg signed [22:0] result_decimal         // Desimaldelen for resultatet
+    // In the float 8 bits are allocated for the integer and 23 bits. It is supposed to emulate float32. 
+    input [7:0] float_a_integer,     
+    input [22:0] float_a_decimal,           
+    input [7:0] float_b_integer,     
+    input [22:0] float_b_decimal,            
+    output reg [7:0] result_integer,  // Use register because the variables is used inside an always.
+    output reg [22:0] result_decimal         
 );
 
-reg [31:0] sum;  // Lagringsenhet for den midlertidige summen
+reg [31:0] sum;  
 
-// Brukes always for utføre operasjonen på output med en gang input varaibelene endres. 
-// @* betyr at always-blokken vil kjøre hver gang input variablene endres.
-// Begin og end funker som krøllparanteser, og definerer scopet til koden. 
-always @* begin     
+// Use always to perform the operation on the output as soon as the input variables change.
+// When using @* the always block will run every time the input variables change.
+always @* begin // Begin and end defines the scope of the code.
     
-    // Flytter heltallene 23 bits til venstre.
+     // Bit shift the integers 23 bits to the left.
     sum = (float_a_integer << 23) + (float_a_decimal) + (float_b_integer << 23) + (float_b_decimal); 
     
     if (sum[22:0] >= 10) begin 
@@ -25,10 +22,8 @@ always @* begin
         sum[22:0] -= 10;
     end
 
-    result_integer = sum[30:23];  // De første 8 bits fra venstre utgjør heltallsdelen i summen
-    result_decimal = sum[22:0];  // De resterende 8 bits fra høyre utgjør desimaldelen i summen
+    result_integer = sum[30:23];  
+    result_decimal = sum[22:0]; 
 end
 
 endmodule
-
-// Når en variabel tildels en verdi inne i en always-blokk, må den være deklarert som reg. 
