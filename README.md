@@ -1,82 +1,80 @@
 # IDATT2104-Prosjekt
-Dette repoet er et resultat av den frivillige oppgaven i faget nettverksprogrammering ved NTNU, IDATT2104. Oppgaven gikk ut på å lage en videoforelsninger om de integrerte kretsene FPGA og ASIC. I dette repoet ligger det kodeeksmpler som er beskrevet om i videoforelesningene. 
+This repository is the result of the voluntary assignment in the Network Programming course at NTNU, IDATT2104. The assignment was to create a video lecture on the integrated circuits FPGA and ASIC. In this repository, you will find code examples that are described in the video lectures.
 
-Eksemplene inkluderer blant: 
-* En "half-adder".
-* Kryss produkt med vektorer.
-* Skalarprodukt.
-* En implementasjon av desimalltal.
+The examples include, among others:
+* A "half-adder".
+* Cross product with vectors.
+* Scalar product.
+* An implementation of decimal numbers.
 
-Kodeeksemplene er skrevet ved bruk av HDL-språket Verilog og simulert ved bruk av Icarus Verilog.
+The code examples are written using the HDL languagem Verilog and simulated using Icarus Verilog.
 
 ## Team
 * Jeffrey Yaw Annor Tabiri
 * Ramtin Forouzandehjoo Samavat
 
-## Instrukser for å kjøre kodeeksemplene
+## Instructions for running the code examples
 
-### Forutsetninger
-For å klone og simulere instrukser skrevet i Verilog, må [Icarus Verilog](https://bleyer.org/icarus/) være nedlastet.
+### Prerequisites
+To clone and simulate instructions written in Verilog, [Icarus Verilog](https://bleyer.org/icarus/) must be downloaded.
 
 ### MacOS
-1. Installer Homebrew ved å kjøre følgende kommando i terminalen:
+1. Install Homebrew by running the following command in the terminal:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-2. Etter at Homebrew er installert, installerer du Icarus Verilog ved å kjøre følgende kommando i terminalen:
+2. After Homebrew is installed, install Icarus Verilog by running the following command in the terminal:
 ```
 brew install icarus-verilog
 ``` 
-3. For å sjekke om installasjonen er gjennomført, kjør denne kommandoen i terminalen:
+3. To check if the installation is completed, run this command in the terminal:
 ```
 iverilog
 ```
-
-Hvis kommandoen returnerer uten feil, kan du være sikker på at Icarus Verilog er installert riktig.
+If the command returns without errors, you can be assured that Icarus Verilog is installed correctly.
 ![image](https://github.com/RamtinS/IDATT2104-Project/assets/112424522/71390be9-1bde-4211-a939-0456b69d512c)
 
 ### Windows
-1. Installer Icarus Verilog ved å laste ned det nyeste programmet fra nettsida dems, [Icarus Verilog](https://bleyer.org/icarus/).
+1. To install Icarus Verilog, download the latest version directly from their official website: [Icarus Verilog](https://bleyer.org/icarus/).
 
-2. Kjør installasjonsprogrammet og følg instruksjonene for å fullføre installasjonen.
+2. Run the installation program and follow the instructions to complete the installation.
 
-3. For å sjekke om installasjonen er gjennomført, kjør iverilog-kommandoen:
+3. To check if the installation is completed, run the iverilog command:
 ```
 iverilog
 ```
-Hvis kommandoen returnerer uten feil, kan du være sikker på at Icarus Verilog er installert riktig.
+If the command returns without errors, you can be assured that Icarus Verilog is installed correctly.
 ![image](https://github.com/RamtinS/IDATT2104-Project/assets/112424522/71390be9-1bde-4211-a939-0456b69d512c)
 
 
-## Installering
-
-1. Først må du klone prosjektet. Dette gjør du ved å skrive følgende kommando i terminalen i et passende katalog:
+## Installing
+1. First, you need to clone the project. You can do this by typing the following command in the terminal in a suitable directory:
 ```
 git clone git@github.com:RamtinS/IDATT2104-Project.git
 ```
 
-2. Naviger til prosjektet ved bruk av følgende kommando:
+2. Navigate to the project using the following command:
 ```
 cd IDATT2104-Project
 ```
 
-3. Naviger til mappen for et av eksemplene, for eksempel eksempel1:
+3. Navigate to the directory for one of the examples, for instance half_adder:
 ```
-cd .\eksempel1\
+cd .\half_adder\
 ```
 
-4. For å kjøre det logiske designet, kan du utføre følgende kommando:
+4. To run the logical design, you can execute the following command:
 ```
 vvp .\half_adder_tb.vvp
 ```
 
-5. Hvis du endrer Verilog-filen eller testbenken, kan du laste opp den nye konfigurasjonsdesignen som skal kjøres ved hjelp av følgende metode:
+5. If you modify the Verilog file or the testbench, you can upload the new configuration design to be run using the following method:
 ```
 iverilog -o half_adder_tb.vvp .\half_adder_tb.v
 ```
 
-6. For å kjøre programmet, utfører du følgende kommando fra punkt 4.
+6. To run the program, execute the following command from step 4.
 
 
-## Spesiell takk
-Vil gjerne gi en spesiell takk til lærer for en fin kreativ oppgave :).
+## Special thanks
+A special thanks to our instructor in network programming for a creative assignment. ;). 
