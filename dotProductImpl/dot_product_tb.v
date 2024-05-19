@@ -1,42 +1,47 @@
-// Definerer en testbenkmodul for å teste dot_product-modulen.
+// Defines a test bench module to test the dot_product module.
 module dot_product_tb;
-    // Deklarer noen varaibler for å reprsentere vektorene. 
-    // Setter dem som register fordi variabelen skal lagre verdier og endres i løpet av simuleringen. 
+   
+    // Declare variables as registeres to represent the vectors. 
+    // Use reg because they are assigned values inside the initial block.
+    // reg can hold values and be changed during simulation.
     reg [7:0] a0, a1, a2, a3;
     reg [7:0] b0, b1, b2, b3;
-    // Deklarerer variabel for å represnetere resultatet til operajsonen. 
-    // Dette er en wire, fordi den brukes til å føre infromasjon ut av modulen. 
+
+    // Declare a variable to represent the result of the operation. 
+    // Declared as wire beacuse it is used to carry data out of the dot_product module.
     wire [15:0] result;
-    // Instansier modulen som skal testes (unit under test).
+
+    // Instantiate the module to be tested (unit under test).
     dot_product uut (
         .a0(a0), .a1(a1), .a2(a2), .a3(a3),
         .b0(b0), .b1(b1), .b2(b2), .b3(b3),
         .result(result)
     );
-    // Lager en initial blokk for å tilordne testverdier og skrive ut resultatet. 
-    // Denne koden vil kjøre ved starten av simuleringen.
+
+    // Create an initial block to assign test data and print the result. 
+    // This code will run at the start of the simulation.
     initial begin
-        // Create the test data for the vectors.
-        // Lager noen test data for vektorene. 
-        // Dette kan gjøre på forksjelige måter. Vi kan bruke heltall, hex, bits, osv. 
-        a0 = 8'b00000001; // En 8 bit representasjon av tallet 1.
-        a1 = 8'b00000010; // En 8 bit representasjon av tallet 2.
-        a2 = 8'b00000011; // En 8 bit representasjon av tallet 3.
-        a3 = 8'b00000100; // En 8 bit representasjon av tallet 4.
+     
+        // The values can be assigned in different ways. We can use integers, hex, bits, etc. 
+        // vector a = [1, 2, 3, 4]
+        a0 = 8'b00000001; // An 8-bit representation of the number 1.
+        a1 = 8'b00000010; // An 8-bit representation of the number 2.
+        a2 = 8'b00000011; // An 8-bit representation of the number 3.
+        a3 = 8'b00000100; // An 8-bit representation of the number 4.
         
+        // vector b = [1, 2, 3, 4] 
         b0 = 8'b00000001; 
         b1 = 8'b00000010; 
         b2 = 8'b00000011; 
         b3 = 8'b00000100; 
-        // vektor a = [1, 2, 3, 4] 
-        // vektor b = [1, 2, 3, 4] 
-        // result c = (1*1)+(2*2)+(3*3)+(4*4)=30
-        // Wait for the result before printing out the result.
-        #10;
-        // Display result.
-        $display("Dot product: %d", result);
-        // Finish simulation
-        $finish;
+
+        // result = (1*1)+(2*2)+(3*3)+(4*4)=30
+        
+        #10; // Wait for the result before printing out the result.
+
+        $display("Dot product: %d", result); // Display result.
+        
+        $finish; // Finish simulation after result is deisplayed. 
     end
 
 endmodule
