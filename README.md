@@ -1,4 +1,4 @@
-# IDATT2104-Project
+# Integrated circuits project
 This repository is the result of the voluntary assignment in the Network Programming course at NTNU, IDATT2104. The assignment was to create a video lecture on the integrated circuits FPGA and ASIC. In this repository, you will find code examples that are described in the video lectures.
 
 The examples include, among others:
@@ -27,12 +27,27 @@ To clone and simulate instructions written in Verilog, [Icarus Verilog](https://
 2. After Homebrew is installed, install Icarus Verilog by running the following command in the terminal:
 ```
 brew install icarus-verilog
-``` 
+```
 3. To check if the installation is completed, run this command in the terminal:
 ```
 iverilog
 ```
-If the command returns without errors, you can be assured that Icarus Verilog is installed correctly.
+
+If the installation was successful, you should see an output similar to this:
+
+```
+iverilog: no source files.
+
+Usage: iverilog [-EiRSuvV] [-B base] [-c cmdfile|-f cmdfile]
+                [-g1995|-g2001|-g2005|-g2005-sv|-g2009|-g2012] [-g<feature>]
+                [-D macro[=defn]] [-I includedir] [-L moduledir]
+                [-M [mode=]depfile] [-m module]
+                [-N file] [-o filename] [-p flag=value]
+                [-s topmodule] [-t target] [-T min|typ|max]
+                [-W class] [-y dir] [-Y suf] [-l file] source_file(s)
+
+See the man page for details.
+```
 
 ### Windows
 1. To install Icarus Verilog, download the latest version directly from their official website: [Icarus Verilog](https://bleyer.org/icarus/).
@@ -43,7 +58,7 @@ If the command returns without errors, you can be assured that Icarus Verilog is
 ```
 iverilog
 ```
-If the command returns without errors, you can be assured that Icarus Verilog is installed correctly.
+If the installation was successful, you should see an output similar too the one above in the installation for Mac.
 
 
 ## Installing
@@ -76,9 +91,7 @@ To run Verilog files that require external modules, specifically those located i
 ```
 iverilog -o output_file.vvp test_bench.v module.v
 ```
-
-
 6. To run the program, execute the following command from step 4.
 
-## Special thanks
-A special thanks to our instructor in network programming for a creative assignment. ;). 
+## Acknowledgements
+A special thanks to our subject teacher for creating a creative assignment. 
