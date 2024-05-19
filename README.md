@@ -32,7 +32,6 @@ brew install icarus-verilog
 iverilog
 ```
 If the command returns without errors, you can be assured that Icarus Verilog is installed correctly.
-![image](https://github.com/RamtinS/IDATT2104-Project/assets/112424522/71390be9-1bde-4211-a939-0456b69d512c)
 
 ### Windows
 1. To install Icarus Verilog, download the latest version directly from their official website: [Icarus Verilog](https://bleyer.org/icarus/).
@@ -44,7 +43,6 @@ If the command returns without errors, you can be assured that Icarus Verilog is
 iverilog
 ```
 If the command returns without errors, you can be assured that Icarus Verilog is installed correctly.
-![image](https://github.com/RamtinS/IDATT2104-Project/assets/112424522/71390be9-1bde-4211-a939-0456b69d512c)
 
 
 ## Installing
