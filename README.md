@@ -2,10 +2,10 @@
 This repository is the result of the voluntary assignment in the Network Programming course at NTNU, IDATT2104. The assignment was to create a video lecture on the integrated circuits FPGA and ASIC. In this repository, you will find code examples that are described in the video lectures.
 
 The examples include, among others:
-* A "half-adder".
+* An half-adder.
 * Cross product with vectors.
-* An implementation of parallelization.
 * Scalar product.
+* An implementation of parallelization.
 * An implementation of decimal numbers.
 
 The code examples are written using the HDL languagem Verilog and simulated using Icarus Verilog.
