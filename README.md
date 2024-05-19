@@ -4,6 +4,7 @@ This repository is the result of the voluntary assignment in the Network Program
 The examples include, among others:
 * A "half-adder".
 * Cross product with vectors.
+* An implementation of parallelization.
 * Scalar product.
 * An implementation of decimal numbers.
 
