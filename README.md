@@ -71,8 +71,13 @@ vvp .\half_adder_tb.vvp
 iverilog -o half_adder_tb.vvp .\half_adder_tb.v
 ```
 
-6. To run the program, execute the following command from step 4.
+To run Verilog files that require external modules, specifically those located in the float and dot_prod directories, you need to include these directories in your compilation command:
+```
+iverilog -o output_file.vvp test_bench.v module.v
+```
 
+
+6. To run the program, execute the following command from step 4.
 
 ## Special thanks
 A special thanks to our instructor in network programming for a creative assignment. ;). 
