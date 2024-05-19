@@ -1,4 +1,4 @@
-# IDATT2104-Prosjekt
+# IDATT2104-Project
 This repository is the result of the voluntary assignment in the Network Programming course at NTNU, IDATT2104. The assignment was to create a video lecture on the integrated circuits FPGA and ASIC. In this repository, you will find code examples that are described in the video lectures.
 
 The examples include, among others:
