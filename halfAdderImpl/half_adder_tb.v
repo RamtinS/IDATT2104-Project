@@ -1,14 +1,15 @@
 `include "half_adder.v"
 module tb_add;
-    // Definerer input
+
+    // Define registers, which function as input
     reg a;
     reg b;
 
-    // Definerer output
+    // Define wires, which function as output
     wire sum;
     wire carry;
 
-    // Instansierer modul
+    // Instantiate module
     half_adder uut (
         .a(a),
         .b(b),
@@ -17,7 +18,7 @@ module tb_add;
     );
 
     initial begin
-        // Starter test med å tilegne ulike verider til a og b
+        // Assign values to a and b
         a = 0; b = 0;
         #10; //Delay
 
@@ -32,7 +33,7 @@ module tb_add;
     end
 
     initial begin
-        // Hver gang verdiene ENDRES, skal det printes/vises ut i konsollen
+        // Display any time one of these values changes.
         $monitor("At time %t, a = %d, b = %d, sum = %d, carry = %d", $time, a, b, sum, carry);
     end
 endmodule

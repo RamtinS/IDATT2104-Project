@@ -1,5 +1,5 @@
 $date
-	Sun May 19 15:42:25 2024
+	Mon May 20 12:44:14 2024
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1s
 $end
-$scope module parallelisering_tb $end
+$scope module parallel_tb $end
 $var wire 8 ! i4 [7:0] $end
 $var wire 8 " i3 [7:0] $end
 $var wire 8 # i2 [7:0] $end

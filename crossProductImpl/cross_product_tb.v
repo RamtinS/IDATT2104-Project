@@ -1,16 +1,16 @@
-`include "kryssprodukt.v" //Vi må ha med kryssprodukt modulen når vi lager test bench.
+`include "cross_product.v" //we have to include the cross product in our testbench.
 
-module kryssprodukt_tb;
+module crossproduct_tb;
 
-    // Vi definerer to registere som virker som input.
+    //  Define registers, which function as input
     reg [7:0] a1, a2, a3, a4;
     reg [7:0] b1, b2, b3, b4;
 
-    // Vi definerer en wire som virker som output.
+    // Define wires, which function as output
     wire [7:0] c1, c2, c3, c4;
 
-    // Instansierer modul og tilegner verdiene. Kan sammenlignes med at man har en konstruktør.
-    kryssprodukt uut (
+    // Instantiate the module we are about to test.
+    crossproduct uut (
         .a1(a1),
         .a2(a2),
         .a3(a3),
@@ -26,7 +26,7 @@ module kryssprodukt_tb;
     );
 
     initial begin
-        // Starter test med å tilegne ulike verider til a og b
+        // Assign values to a and b
         //   0             1
         a1 = 8'b00000000;  b1 = 8'b00000001;
         //   2             3
@@ -36,10 +36,10 @@ module kryssprodukt_tb;
         //   6             7
         a4 = 8'b00000110;  b4 = 8'b00000111;
 
-        // Delay for å venter på resultat
+        // Delay to wait for results
         #10; 
 
-        // Viser resultat
+        // Show results
         $display("c1 = %d", c1);
         $display("c2 = %d", c2);
         $display("c3 = %d", c3);
